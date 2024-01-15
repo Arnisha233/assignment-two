@@ -10,7 +10,8 @@
 /* navbar section start */
 
 .navbar{
-    max-width: 1200px;
+    max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
 }
@@ -43,8 +44,11 @@
 
 /* explore travel section start */
 .banner-section{
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
+    margin-top: 50px;
+}
+.banner{
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,7 +56,6 @@
     width: 100%;
     height: 100vh;
     margin: 30px auto;
-    margin-top: 50px;
 }
 .banner-content{
     width: 100%;
@@ -100,14 +103,13 @@
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-
 }
 
 /* explore travel section end */
 
 /* tour section start */
 .tour{
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
     margin-top: 80px;
 }
@@ -160,14 +162,13 @@
 /* destination section start */
 
 .destination{
-        max-width: 1200px;
-        margin: 0 auto;
-        margin-top: 100px;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 100px;
  }
  .dest-content{
     text-align: center;
  }
-.destination-title{}
 .dest-content .destination-description{
     margin-top: 24px;
     width: 643px;
@@ -211,6 +212,7 @@
 }
 .img-7{
     grid-column: 6/span 7;
+    grid-row: 3/span 1;
 }
 .img-box img{
     width: 100%;
@@ -218,28 +220,183 @@
 }
 /* destination section end */
 
+/* choose section start */
+.choose{
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.title-text{
+    text-align: center;
+}
+.firs-box-text{
+    display: flex;
+    margin-top: 40px;
+}
+.firs-text{
+    width: 50%;
+    border: 2px solid red;
+    background-color: #FBB56333;
+    border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+width: 573px;
+height: 284px;
+}
+.firs-text .icon{
+   padding-top: 30px;
+    margin-left: 30px;
+}
+.second-text{
+    width: 50%;
+    background-color: #29CEF633;
+}
+
+/* choose section end */
+
+/* newsletter section start */
+.newsletter{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    margin-top: 100px;
+    position: relative;
+}
+.newsletter-form{
+border-radius: 16px;
+border: 1px solid #FF5400;
+width: 50%;
+background: #FFF;
+padding-bottom: 40px;
+
+}
+.newsletter-form h4{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.newsletter-form .newsletter-title{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+hr{
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.contact{
+    margin-top: 24px;
+}
+ .contact{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
+ }
+ .contact input{
+    width: 400px;
+    height: 52px;
+    margin-left: 40px;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+    outline: 0;
+    
+ }
+.newsletter-img{
+    width: 50%;
+}
+.newsletter-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.save-up{
+    width: 250px;
+    height: 70px;
+    border-radius: 16px;
+    background: #FF5400;
+    position: absolute;
+    bottom: 6px;
+    right: 100px;
+    bottom: 39px;
+    transform: rotate(-19.628deg);
+    left: 78%;
+}
+
+/* newsletter section end */
 
 
 
 
 
-@media screen and (max-width:576px) {
+
+
+
+@media screen and (max-width:600px) {
+
+    .banner{
+        width: 100%;
+        background-position: center;
+    }
+    .banner-content h1{
+        font-size: 30px;
+    }
+    .banner-content p{
+        color: #FFF;
+        font-size: 16px;
+        margin-top: 24px;
+        text-align: center;
+    }
+    .input-text .text, .btn{
+        width: 70%;
+        border: 0;
+        margin-top: 10px;
+        margin-left: 15%;
+    }
+
     .tour-content{
         flex-direction: column;
         width: 100%;
+        padding: 15px;
+    }
+    .tour-text, .tour-img{
+        width: 100%;
+    }
+    .button-btn{
+        margin-bottom: 15px;
+    }
+    .newsletter{
+        flex-direction: column;
+    }
+    .newsletter-form{
+        width: 100%;
+    }
+    .newsletter-img{
+        width: 100%;
+    }
+    .newsletter-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+        padding: 10px;
+    }
+    .newsletter-form{
+        border-radius: 16px;
+        border: 1px solid #FF5400;
+        width: 100%;
+        background: #FFF;
+        padding-bottom: 40px;
     }
     
-    .tour-text{
-        width: 100%;
-    }
-    .tour-img{
-        width: 100%;
-    }
-    .tour-items{
-        width: 100%;
-    }
-    .img-box{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 15px;
-    }
 }
