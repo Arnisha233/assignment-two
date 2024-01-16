@@ -42,9 +42,7 @@
     color: #424247;
     font-size: 18px;
     font-weight: 400;
-
 }
-
 
 /* navbar section end */
 
@@ -157,7 +155,6 @@
 }
 .items{
     margin-top: 16px;
-    
 }
 
 .button-btn{
@@ -390,7 +387,6 @@
     display: flex;
 }
 
-
 .deal-two{
     max-width: 1170px;
     margin: 0 auto;
@@ -442,7 +438,6 @@
 .icon-three-two{
     display: flex;
 }
-
 
 .deal-three{
     max-width: 1170px;
@@ -631,9 +626,6 @@ font-weight: 300;
 padding-bottom: 50px;
 }
 /* footer section end */
-
-
-
 
 
 
