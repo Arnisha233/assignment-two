@@ -767,6 +767,9 @@ padding-bottom: 50px;
     .newsletter-form .newsletter-title{
         width: 250px;
     }
+    hr{
+        width: 75%;
+    }
     .newsletter-img{
         width: 100%;
     }
