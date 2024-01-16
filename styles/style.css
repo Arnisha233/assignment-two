@@ -386,7 +386,7 @@ hr{
     border-radius: 16px;
 }
 .save-up{
-    width: 250px;
+    width: 230px;
     height: 70px;
     border-radius: 16px;
     background: #FF5400;
@@ -444,7 +444,7 @@ hr{
     text-align: center;
 }
 .footer-content-two h6{
-    color: #131318;
+color: #131318;
 font-family: Inter;
 font-size: 16px;
 font-weight: 300;
@@ -547,6 +547,7 @@ padding-bottom: 50px;
     }
     .third-text{
         width: 100%;
+        margin-bottom: 32px;
     }
     .third-text p{
         width: 100%;
@@ -613,5 +614,12 @@ padding-bottom: 50px;
     .footer-content-one{
         padding: 20px 30px;
     }
+/* footer section stat */
+.footer-logo img{
+    margin-right: 10px;
+    width: 50px;
+}  
+
+/* footer section end */
     
 }
