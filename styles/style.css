@@ -658,9 +658,23 @@ padding-bottom: 50px;
 
 @media screen and (max-width:600px) {
 
+
+    .logo-part{
+        width: 100%;
+        position: relative;
+    }
     .items-content{
         display: none;
-    } 
+    }
+    .bar{
+        background-image: url('../Images/Frame\ \(3\).svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 20%;
+        transform: translate(40px, 30px);
+    }
     .banner{
         width: 100%;
         background-position: center;
