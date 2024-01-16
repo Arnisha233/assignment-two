@@ -548,8 +548,19 @@ hr{
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
     border: 0;
+    outline: 0;  
+ }
+ .subscribe{
+    width: 490px;
+    height: 52px;
+    margin-left: 40px;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 16px;
+    border-radius: 8px;
+    border: 0;
     outline: 0;
-    
+    cursor: pointer;
  }
 .newsletter-img{
     width: 50%;
@@ -592,12 +603,14 @@ hr{
 .footer-logo{
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 22px;
 }
 .footer-logo img{
     margin-right: 20px;
     width: 50px;
 }  
-.footer-logo h2{
+.footer-logo .title{
     text-align: center;
 }
 .footer-description{
@@ -611,6 +624,9 @@ hr{
 .font-icon{
     font-size: 30px;
     margin-top: 30px;
+}
+.footer-row, hr{
+    color: #1313180D;
 }
 .font-icon .fa-brands{
     padding: 15px;
@@ -810,11 +826,31 @@ padding-bottom: 50px;
         padding: 20px 30px;
     }
 /* footer section stat */
+.footer-logo{
+    font-size: 18px;
+}
+.footer-description{
+    font-size: 14px;
+}
 .footer-logo img{
     margin-right: 10px;
-    width: 50px;
-}  
-
+    width: 40px;
+    height: 46.673px;
+}
+.footer-title{
+    color: var(--Dark-01, #131318);
+    font-size: 320%;
+    font-weight: 800;
+    color: red;
+}
+.title{
+    color: var(--Dark-01, #131318);
+font-family: Mulish;
+font-size: 32px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
 /* footer section end */
     
 }
