@@ -115,6 +115,7 @@
 }
 .tour-content{
     display: flex;
+    gap: 20px;
 }
 .tour-text{
     width: 50%;
@@ -138,24 +139,29 @@
     object-fit: cover;
 }
 .tour-description{
-    margin-top: 24px;
+    margin-top: 15px;
+    padding: 0px 25px 0px 0px;
     line-height: 26px;
 }
 .tour-items{
-    margin-top: 24px;
-    line-height: 26px;
+    line-height: 25px;
+    padding: 25px;
 }
 .items{
     margin-top: 16px;
-    margin-left: 30px;
+    
 }
 
 .button-btn{
     border-radius: 8px;
     background: #FF5400;
-    padding: 14px 25px;
+    color: #fff;
+    padding: 14px 30px;
     border: 0;
     margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
 }
 /* tour section end */
 
@@ -335,6 +341,54 @@ hr{
 
 /* newsletter section end */
 
+/* footer section start */
+    .footer-holiday{
+        background: rgba(19, 19, 24, 0.05);
+        margin-top: 110px;
+    }
+.footer-content-one{
+    padding: 100px 300px 50px 300px;
+    text-align: center;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+.footer-logo img{
+    margin-right: 20px;
+    width: 50px;
+}  
+.footer-logo h2{
+    text-align: center;
+}
+.footer-description{
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.font-icon{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.font-icon .fa-brands{
+    padding: 15px;
+}
+.footer-content-two{
+    text-align: center;
+}
+.footer-content-two h6{
+    color: #131318;
+font-family: Inter;
+font-size: 16px;
+font-weight: 300;
+padding-bottom: 50px;
+}
+/* footer section end */
+
+
 
 
 
@@ -369,6 +423,11 @@ hr{
         width: 100%;
         padding: 15px;
     }
+    .tour-text h2{
+        color: #131318;
+        font-size: 30px;
+        font-weight: 800;
+    }
     .tour-text, .tour-img{
         width: 100%;
     }
@@ -397,6 +456,9 @@ hr{
         width: 100%;
         background: #FFF;
         padding-bottom: 40px;
+    }
+    .footer-content-one{
+        padding: 20px 30px;
     }
     
 }
