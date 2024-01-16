@@ -75,6 +75,8 @@
     font-size: 16px;
     font-weight: 400;
     margin-top: 24px;
+    width: 676px;
+  text-align: center;
 }
 .input-btn{
     border-radius: 8px;
@@ -481,12 +483,12 @@ padding-bottom: 50px;
         font-size: 16px;
         margin-top: 24px;
         text-align: center;
+        width: 100%;
     }
     .input-text .text, .btn{
-        width: 70%;
+        width: 100%;
         border: 0;
         margin-top: 10px;
-        margin-left: 15%;
     }
 
     .tour-content{
