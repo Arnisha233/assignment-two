@@ -839,7 +839,7 @@ padding-bottom: 50px;
         width: 270px;
     }
     hr{
-        width: 75%;
+        width: 83%;
     }
     .newsletter-img{
         width: 100%;
@@ -861,7 +861,7 @@ padding-bottom: 50px;
     }
 
      .contact input{
-        width: 288px;
+        width: 120%;
         height: 52px;
         margin-left: 40px;
         padding: 16px;
@@ -871,7 +871,7 @@ padding-bottom: 50px;
         outline: 0;
      }
      .subscribe{
-        width: 288px;
+        width: 120%;
         height: 52px;
      }
      .save-up{
