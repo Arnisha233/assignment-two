@@ -651,7 +651,6 @@ padding-bottom: 50px;
 
 
 
-
 @media screen and (max-width:600px) {
 
     .logo-part{
@@ -794,9 +793,6 @@ padding-bottom: 50px;
         padding: 9px 20px;
     }
 
-
-
-
 .deal-content {
         width: 335px;
         height: 500px;
@@ -825,24 +821,6 @@ padding-bottom: 50px;
         height: 40px;
         padding: 9px 20px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     /* deal section end */
@@ -902,8 +880,8 @@ padding-bottom: 50px;
         border-radius: 16px;
         background: #FF5400;
         position: absolute;
-        transform: rotate(-19.628deg);
-        left: 130px;
+        transform: rotate(-13.628deg);
+        left: 340px
     }
     .save-title{
         padding: 20px 0px;
