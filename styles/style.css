@@ -543,7 +543,7 @@ hr{
     gap: 10px;
  }
  .contact input{
-    width: 490px;
+    width: 500px;
     height: 52px;
     margin-left: 40px;
     padding: 16px;
@@ -553,7 +553,7 @@ hr{
     outline: 0;  
  }
  .subscribe{
-    width: 490px;
+    width: 500px;
     height: 52px;
     margin-left: 40px;
     border-radius: 8px;
@@ -562,6 +562,8 @@ hr{
     border-radius: 8px;
     border: 0;
     outline: 0;
+    color: #fff;
+    font-size: 20px;
     cursor: pointer;
  }
 .newsletter-img{
