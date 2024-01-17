@@ -836,7 +836,7 @@ padding-bottom: 50px;
         width: 100%;
     }
     .newsletter-form .newsletter-title{
-        width: 250px;
+        width: 270px;
     }
     hr{
         width: 75%;
@@ -861,7 +861,7 @@ padding-bottom: 50px;
     }
 
      .contact input{
-        width: 110%;
+        width: 288px;
         height: 52px;
         margin-left: 40px;
         padding: 16px;
@@ -871,7 +871,7 @@ padding-bottom: 50px;
         outline: 0;
      }
      .subscribe{
-        width: 110%;
+        width: 288px;
         height: 52px;
      }
      .save-up{
