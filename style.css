@@ -107,6 +107,111 @@ a:active {
 }
 /* banner end */
 
+/* plants section start */
+.plants-content {
+  text-align: center;
+}
+.plants-content-title {
+  color: #000;
+  font-family: "Noto Serif";
+  font-size: 50px;
+  font-weight: 700;
+}
+.plants-description {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  width: 888px;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+.plants-images {
+  margin-top: 49px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.plants-one .images {
+  height: 322.938px;
+}
+.plants-one .images img {
+  height: 100%;
+}
+.plants-images .plants-title {
+  color: #111;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: center;
+  padding-top: 30px;
+}
+.plants-images .plants-price {
+  color: #111;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.plants-images .btn {
+  display: flex;
+  height: 50px;
+  padding: 26px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  background: #e95a08;
+  margin-top: 30px;
+}
+.plants-images button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  background: #e95a08;
+}
+/* plants section end */
+
+/* flower aad plants section start */
+.flower {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.flower-image {
+  width: 540px;
+  height: 597px;
+  position: relative;
+}
+.flower-image .trusted {
+  width: 286px;
+  height: 286px;
+  position: absolute;
+  left: 62%;
+  bottom: 75%;
+}
+.flower-text {
+}
+.flower-text-title {
+  color: #000;
+  font-family: "Noto Serif";
+  font-size: 50px;
+  font-weight: 700;
+  height: 137px;
+}
+.flower-text-ul {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+/* flower and plants sectin end */
+
 /* responsive for mobile start */
 @media screen and (max-width: 576px) {
   /* nav bar start */
@@ -131,11 +236,12 @@ a:active {
   .banner {
     flex-direction: column;
     flex-direction: column-reverse;
-    margin: 28px;
+    margin: 0;
     gap: 28px;
   }
   .banner .banner-content {
     width: 100%;
+    padding: 0 16px;
   }
   .banner-title {
     font-size: 1.5rem;
@@ -153,5 +259,46 @@ a:active {
     width: 100%;
   }
   /* banner end */
+
+  /* plants section start */
+
+  /* plants section end */
+
+  /* flower aad plants section start */
+  .flower {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .flower-image {
+    width: 540px;
+    height: 597px;
+    position: relative;
+  }
+  .flower-image .trusted {
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    left: 62%;
+    bottom: 75%;
+    display: none;
+  }
+  .flower-text {
+  }
+  .flower-text-title {
+    color: #000;
+    font-family: "Noto Serif";
+    font-size: 50px;
+    font-weight: 700;
+    height: 137px;
+  }
+  .flower-text-ul {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 20px 0;
+  }
+  /* flower and plants sectin end */
 }
 /* responsive for mobile end */
