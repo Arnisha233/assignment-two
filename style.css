@@ -18,7 +18,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 3px solid red;
+  margin-top: 30px;
+  border: 3px solid orange;
 }
 .nav-logo {
   width: 135px;
@@ -37,7 +38,6 @@
   color: #8987a1;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
@@ -45,7 +45,6 @@
   color: #252432;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
 }
@@ -53,7 +52,6 @@ a:active {
   color: #252432;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
 }
@@ -69,16 +67,91 @@ a:active {
   color: #000;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
 /* nav bar end */
 
+/* banner start */
+.banner {
+  display: flex;
+  align-items: end;
+  margin: 80px 0;
+}
+.banner .banner-content {
+  width: 50%;
+  border: 3px solid red;
+}
+.banner-title {
+  color: #000;
+  font-family: "Noto Serif", serif;
+  font-size: 4.063rem;
+  font-weight: 700;
+}
+.banner-title .extra-color {
+  color: #e95a08;
+  font-family: "Noto Serif";
+  font-size: 4.063rem;
+  font-weight: 700;
+}
+.banner-content .banner-desription {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  margin-top: 13px;
+}
+.banner .banner-img {
+  width: 50%;
+  border: 3px solid green;
+}
+/* banner end */
+
 /* responsive for mobile start */
 @media screen and (max-width: 576px) {
+  /* nav bar start */
+  .nav-bar {
+    margin-top: 13px;
+    padding: 0 16px;
+  }
+  .nav-logo {
+    width: 63px;
+    height: 38px;
+  }
+  .nav-logo img {
+    width: 100%;
+    height: 100%;
+  }
   .nav-item {
     display: none;
   }
+  /* nav bar end */
+
+  /* banner start */
+  .banner {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    margin: 28px;
+    gap: 28px;
+  }
+  .banner .banner-content {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  .banner-title .extra-color {
+    font-size: 1.5rem;
+  }
+  .banner-content .banner-desription {
+    font-size: 0.875rem;
+  }
+  .banner .banner-img {
+    width: 100%;
+  }
+  .banner .banner-img img {
+    width: 100%;
+  }
+  /* banner end */
 }
 /* responsive for mobile end */
