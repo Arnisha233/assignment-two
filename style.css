@@ -6,10 +6,12 @@
   box-sizing: border-box;
 }
 /* shared style start */
+body {
+  background: #f5f8ff;
+}
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  border: 3px solid red;
 }
 /* shared style end */
 
@@ -19,7 +21,6 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  border: 3px solid orange;
 }
 .nav-logo {
   width: 135px;
@@ -28,7 +29,6 @@
 .nav-item ul {
   display: flex;
   gap: 48px;
-  border: 2px solid green;
 }
 .nav-item li {
   list-style: none;
@@ -80,7 +80,6 @@ a:active {
 }
 .banner .banner-content {
   width: 50%;
-  border: 3px solid red;
 }
 .banner-title {
   color: #000;
@@ -103,11 +102,17 @@ a:active {
 }
 .banner .banner-img {
   width: 50%;
-  border: 3px solid green;
+}
+.banner-img img {
+  width: 100%;
+  height: 100%;
 }
 /* banner end */
 
 /* plants section start */
+.plant {
+  margin: 50px 0;
+}
 .plants-content {
   text-align: center;
 }
@@ -117,10 +122,17 @@ a:active {
   font-size: 50px;
   font-weight: 700;
 }
+.plants-content-title .extra-color {
+  color: #e95a08;
+  text-align: center;
+  font-family: "Noto Serif";
+  font-size: 50px;
+  font-weight: 700;
+}
 .plants-description {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 400;
   width: 888px;
@@ -131,17 +143,19 @@ a:active {
   margin-top: 49px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  /* gap: 30px 20px; */
+  gap: 30px 10px;
 }
 .plants-one .images {
   height: 322.938px;
 }
 .plants-one .images img {
+  width: 100%;
   height: 100%;
 }
 .plants-images .plants-title {
   color: #111;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 150%;
@@ -150,11 +164,13 @@ a:active {
 }
 .plants-images .plants-price {
   color: #111;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  text-align: center;
+  padding-top: 20px;
 }
 .plants-images .btn {
   display: flex;
@@ -181,36 +197,119 @@ a:active {
   display: flex;
   align-items: center;
   gap: 60px;
+  margin: 120px 0;
 }
 .flower-image {
   width: 540px;
-  height: 597px;
   position: relative;
+}
+.flower-image img {
+  width: 100%;
+  height: 100%;
 }
 .flower-image .trusted {
   width: 286px;
   height: 286px;
   position: absolute;
-  left: 62%;
+  left: 63%;
   bottom: 75%;
 }
 .flower-text {
+  width: 540px;
 }
 .flower-text-title {
   color: #000;
   font-family: "Noto Serif";
   font-size: 50px;
   font-weight: 700;
-  height: 137px;
 }
 .flower-text-ul {
   color: rgba(0, 0, 0, 0.5);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 400;
-  padding: 20px 0;
+  padding-top: 30px;
+  margin-left: 30px;
+  border: 3px solid;
 }
 /* flower and plants sectin end */
+
+/* latest section start */
+.latest-images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-top: 100px;
+  gap: 20px;
+  position: relative;
+}
+.img-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+.img-2 {
+  grid-column: 3 / span 4;
+  grid-row: 1 / span 2;
+}
+.img-3 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
+.latest-images img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.img-text {
+  position: relative;
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-text .p {
+  position: absolute;
+  top: -130px;
+  color: #fff;
+  text-align: center;
+  font-family: "Noto Serif";
+  font-size: 20px;
+  font-weight: 700;
+}
+.img-text a {
+  position: absolute;
+  top: -90px;
+  color: #fff;
+  text-align: center;
+  font-family: "Noto Serif";
+  font-size: 16px;
+  font-weight: 700;
+}
+/* .img-text {
+  position: absolute;
+}
+.img-text p {
+  color: #fff;
+  text-align: center;
+  font-family: "Noto Serif";
+  font-size: 20px;
+  font-weight: 700;
+}
+.img-text a {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding-top: 26px;
+} */
+
+/*  */
+
+/* latest section end */
 
 /* bunch section start */
 .bunch-text {
@@ -223,6 +322,7 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 50px 0;
 }
 .bunch-input {
   display: flex;
@@ -253,6 +353,72 @@ a:active {
 }
 /* bunch section end */
 
+/* footer section start */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 3px solid black;
+  margin: 50px 0;
+  gap: 48px;
+}
+.footer-first-text {
+  border: 3px solid green;
+}
+.footer-first-text img {
+  width: 135px;
+  height: 82px;
+}
+.footer-first-text p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  padding-top: 16px;
+  width: 359px;
+}
+.footer-second-text {
+  border: 3px solid red;
+}
+.footer-second-text ul li {
+  list-style: none;
+  padding-bottom: 32px;
+}
+.footer-second-text a {
+  color: #6b7280;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+}
+.footer-third-text {
+  border: 3px solid yellow;
+}
+.footer-third-text ul li {
+  list-style: none;
+  padding-bottom: 32px;
+}
+.footer-third-text a {
+  color: #6b7280;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+}
+.footer-fifth-text {
+  border: 3px solid orange;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-fifth-text img {
+  width: 36px;
+  height: 36px;
+}
+/* footer section end */
+
 /* responsive for mobile start */
 @media screen and (max-width: 576px) {
   /* nav bar start */
@@ -277,7 +443,7 @@ a:active {
   .banner {
     flex-direction: column;
     flex-direction: column-reverse;
-    margin: 0;
+    margin-top: 28px;
     gap: 28px;
   }
   .banner .banner-content {
@@ -302,44 +468,202 @@ a:active {
   /* banner end */
 
   /* plants section start */
-
+  .plant {
+    margin: 50px 0;
+  }
+  .plants-content {
+    text-align: center;
+  }
+  .plants-content-title {
+    font-size: 24px;
+  }
+  .plants-content-title .extra-color {
+    font-size: 24px;
+  }
+  .plants-description {
+    font-size: 14px;
+    width: 336px;
+  }
+  .plants-images {
+    margin-top: 49px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 10px;
+    padding: 0 14px;
+    border: 3px solid orange;
+  }
+  .plants-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .plants-one .images {
+    height: 196.5px;
+    width: 100%;
+    border: 3px solid black;
+  }
+  .plants-one .images img {
+    width: 100%;
+    height: 100%;
+  }
+  .plants-images .plants-title {
+    font-size: 16px;
+    padding-top: 30px;
+  }
+  .plants-images .plants-price {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .plants-images .btn {
+    display: flex;
+    height: 50px;
+    padding: 26px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: #e95a08;
+    margin-top: 30px;
+  }
+  .plants-images button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    background: #e95a08;
+  }
   /* plants section end */
 
   /* flower aad plants section start */
   .flower {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 18px;
+    padding: 0 17px;
   }
   .flower-image {
-    width: 540px;
-    height: 597px;
+    width: 100%;
+    height: 100%;
     position: relative;
   }
   .flower-image .trusted {
-    width: 286px;
-    height: 286px;
-    position: absolute;
-    left: 62%;
-    bottom: 75%;
     display: none;
   }
   .flower-text {
+    width: 100%;
   }
   .flower-text-title {
-    color: #000;
-    font-family: "Noto Serif";
-    font-size: 50px;
-    font-weight: 700;
-    height: 137px;
+    font-size: 24px;
   }
   .flower-text-ul {
-    color: rgba(0, 0, 0, 0.5);
-    font-family: Inter;
-    font-size: 22px;
-    font-weight: 400;
-    padding: 20px 0;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-left: 20px;
   }
   /* flower and plants sectin end */
+
+  /* latest section start */
+  .latest-images {
+    display: flex;
+    flex-direction: column;
+    padding-top: 46px;
+    gap: 20px;
+    position: relative;
+  }
+  .latest-images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  /* .img-text {
+  position: absolute;
+}
+.img-text p {
+  color: #fff;
+  text-align: center;
+  font-family: "Noto Serif";
+  font-size: 20px;
+  font-weight: 700;
+}
+.img-text a {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding-top: 26px;
+} */
+
+  /*  */
+
+  /* latest section end */
+
+  /* bunch section start */
+  .bunch-text {
+    width: 100%;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bunch-text {
+    color: #fff;
+    text-align: center;
+    font-family: "Noto Serif";
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .bunch-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 23px;
+  }
+  .bunch-input input {
+    width: 218px;
+    height: 50px;
+    padding: 8px 20px;
+    border: none;
+  }
+  .bunch-input button {
+    width: 103px;
+    height: 50px;
+    background: #e95a08;
+    border: none;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .bunch-text .bunch-text-title {
+    font-size: 20px;
+  }
+  /* bunch section end */
+
+  /* footer section start */
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .footer-first-text img {
+    width: 180px;
+    height: 109px;
+  }
+  .footer-first-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .footer-fifth-text {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  /* footer section end */
 }
 /* responsive for mobile end */
