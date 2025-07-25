@@ -197,7 +197,7 @@ a:active {
   display: flex;
   align-items: center;
   gap: 60px;
-  margin: 120px 0;
+  margin: 160px 0;
 }
 .flower-image {
   width: 540px;
@@ -230,7 +230,6 @@ a:active {
   font-weight: 400;
   padding-top: 30px;
   margin-left: 30px;
-  border: 3px solid;
 }
 /* flower and plants sectin end */
 
@@ -262,8 +261,6 @@ a:active {
 
 .image-box {
   position: relative;
-  /* width: 250px;
-  height: 150px; */
   border-radius: 12px;
 }
 .img-text {
@@ -278,7 +275,6 @@ a:active {
   font-family: "Noto Serif";
   font-size: 16px;
   font-weight: 700;
-  border: 3px solid red;
 }
 .img-text .par {
   color: #fff;
@@ -329,7 +325,7 @@ a:active {
   background: #e95a08;
   border: none;
   color: #fff;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 600;
 }
@@ -346,12 +342,10 @@ a:active {
 .footer-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border: 3px solid black;
   margin: 50px 0;
   gap: 48px;
 }
 .footer-first-text {
-  border: 3px solid green;
 }
 .footer-first-text img {
   width: 135px;
@@ -359,14 +353,13 @@ a:active {
 }
 .footer-first-text p {
   color: rgba(0, 0, 0, 0.5);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 400;
   padding-top: 16px;
   width: 359px;
 }
 .footer-second-text {
-  border: 3px solid red;
 }
 .footer-second-text ul li {
   list-style: none;
@@ -375,14 +368,13 @@ a:active {
 .footer-second-text a {
   color: #6b7280;
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-decoration: none;
 }
 .footer-third-text {
-  border: 3px solid yellow;
 }
 .footer-third-text ul li {
   list-style: none;
@@ -391,14 +383,13 @@ a:active {
 .footer-third-text a {
   color: #6b7280;
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-decoration: none;
 }
 .footer-fifth-text {
-  border: 3px solid orange;
   display: flex;
   justify-content: space-between;
 }
@@ -479,7 +470,6 @@ a:active {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 10px;
     padding: 0 14px;
-    border: 3px solid orange;
   }
   .plants-one {
     display: flex;
@@ -489,7 +479,6 @@ a:active {
   .plants-one .images {
     height: 196.5px;
     width: 100%;
-    border: 3px solid black;
   }
   .plants-one .images img {
     width: 100%;
@@ -530,6 +519,7 @@ a:active {
     align-items: center;
     gap: 18px;
     padding: 0 17px;
+    margin: 40px 0 80px 0;
   }
   .flower-image {
     width: 100%;
@@ -559,6 +549,7 @@ a:active {
     padding-top: 46px;
     gap: 20px;
     position: relative;
+    padding: 0 17px;
   }
   .latest-images img {
     width: 100%;
@@ -620,6 +611,7 @@ a:active {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+    padding: 0 20px;
   }
   .footer-first-text img {
     width: 180px;
